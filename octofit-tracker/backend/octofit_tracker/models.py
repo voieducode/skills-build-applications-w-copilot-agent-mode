@@ -9,7 +9,7 @@ class User(models.Model):
 
 class Team(models.Model):
     name = models.CharField(max_length=255)
-    members = models.ArrayField(model_container=User)
+    members = models.JSONField()  # Use JSONField to store a list of user IDs as strings
     # Add other fields as needed
 
 class Activity(models.Model):
