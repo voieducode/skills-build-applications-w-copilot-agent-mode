@@ -80,6 +80,14 @@ DATABASES = {
     "default": {
         "ENGINE": "djongo",
         "NAME": "octofit_db",
+        "CLIENT": {
+            "host": "localhost",
+            "port": 27017,
+            "username": "thundergod",
+            "password": "thundergodpassword",
+            "authSource": "admin",
+            "authMechanism": "SCRAM-SHA-1",
+        },
     }
 }
 
